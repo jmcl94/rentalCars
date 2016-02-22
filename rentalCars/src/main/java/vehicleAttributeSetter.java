@@ -30,9 +30,12 @@ public class vehicleAttributeSetter {
             float os = veh.get(index).getRating() + veh.get(index).getSippScore();
             veh.get(index).setOverallScore(os);
         }
+        testJsonData.testEmptyObjectData(veh);
+        testJsonData.testSIPP(veh);
         return veh;
 
     }
+
     public static void firstLetter(char c, int index) {
         String type;
         if (c == 'M')
